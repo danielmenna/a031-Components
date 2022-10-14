@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Componentes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Caso não lembre como funciona o processo de entrega, clique [**aqui**](https://github.com/labenuexercicios/instrucoes-entrega)
 
-## Available Scripts
+## O que você precisa saber e praticar desta aula?
+1. Criação de componentes no React;
+2. importar e exportar arquivos e componentes;
+3. Aninhar componentes.
 
-In the project directory, you can run:
 
-### `npm start`
+## Como eu vou executar os exercícios?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Vamos utilizar o LabeTube, da aula anterior, que foi transferido para um app React, para fazer os exercícios da aula de hoje. Neste exercício, vamos transformar a lista de vídeos em **componentes React**.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Para executar este exercício, você pode criar uma nova aplicação React, como foi visto na aula passada, ou utilizar o link abaixo para ir ao template no **CodeSandbox**. Este template para exatamente onde o exercício da última aula acaba.
 
-### `npm test`
+[**Template do CodeSandbox**](https://codesandbox.io/s/template-exercicio-componentes-5gp0bf)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Caso queira criar uma nova aplicação React, basta copiar os conteúdos deste repositório e colar dentro da pasta do seu projeto criado.
 
-### `npm run build`
+# Exercício 1
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Primeiro, vamos criar um componente para representar o Card de Vídeo. Chame-o de **CardVideo**. Para facilitar nosso trabalho, crie este Componente em um arquivo chamado `CardVideo.js`.
+Agora, os cards de vídeo serão chamados por meio deste componente. Portanto, altere os elementos HTML que foram criados no nosso `App.js`, para que ao invés de serem HTML, serem o componente `CardVideo`. Todos os vídeos terão a mesma aparência, mas enquanto não conhecemos `props` (matéria da próxima aula), podemos deixar assim.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Lembre-se de tornar a função exportável, e importá-la no `App.js`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Exercício 2
+Depois de criar o CardVideo, crie um componente **InfosUsuario**, que guarde uma imagem e um nome de usuário. Vamos criar este componente, pois estas informações são passíveis de reutilização em outros contextos. Crie um arquivo `InfosUsuario.js` para guardar este componente. Todos os vídeos terão o mesmo autor, por ora.
 
-### `npm run eject`
+# Exercício 3
+ Após criar ambos os componentes, adicione `InfosUsuario` ao corpo do componente que guarda os cards do video. Agora, seu `App.js` deve exibir cards de vídeo iguais, que contenham também informações sobre o usuário que fez o vídeo.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Informações úteis sobre o assunto
+[Components (em inglês) | Geeks for Geeks](https://www.geeksforgeeks.org/reactjs-components/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
