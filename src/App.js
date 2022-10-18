@@ -1,8 +1,13 @@
 import React from 'react'
 import { CardVideo } from './Components/CardVideo'
+import userIcon from './img/user.png'
 import './styles.css'
 
 export default function App() {
+  const titulo = 'Título do vídeo'
+  const imagemCapa = 'https://picsum.photos/400/400?a=1'
+  const autor = 'Arlindo Orlando'
+
   return (
     <div>
       <div className="tela-inteira">
@@ -24,14 +29,54 @@ export default function App() {
           </nav>
 
           <section className="painel-de-videos">
-            <CardVideo />
-            <CardVideo />
-            <CardVideo />
-            <CardVideo />
-            <CardVideo />
-            <CardVideo />
-            <CardVideo />
-            <CardVideo />
+            <CardVideo
+              titulo={titulo}
+              capa={imagemCapa}
+              icone={userIcon}
+              autor={autor}
+            />
+            <CardVideo
+              titulo={titulo}
+              capa={imagemCapa}
+              icone={userIcon}
+              autor={autor}
+            />
+            <CardVideo
+              titulo={titulo}
+              capa={imagemCapa}
+              icone={userIcon}
+              autor={autor}
+            />
+            <CardVideo
+              titulo={titulo}
+              capa={imagemCapa}
+              icone={userIcon}
+              autor={autor}
+            />
+            <CardVideo
+              titulo={titulo}
+              capa={imagemCapa}
+              icone={userIcon}
+              autor={autor}
+            />
+            <CardVideo
+              titulo={titulo}
+              capa={imagemCapa}
+              icone={userIcon}
+              autor={autor}
+            />
+            <CardVideo
+              titulo={titulo}
+              capa={imagemCapa}
+              icone={userIcon}
+              autor={autor}
+            />
+            <CardVideo
+              titulo={titulo}
+              capa={imagemCapa}
+              icone={userIcon}
+              autor={autor}
+            />
           </section>
         </main>
 
