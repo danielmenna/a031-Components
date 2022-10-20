@@ -1,89 +1,27 @@
 import React from 'react'
-import { CardVideo } from './Components/CardVideo'
-import userIcon from './img/user.png'
-import './styles.css'
+// import { CardVideo } from './Components/CardVideo/CardVideo'
+import icone from './img/user.png'
+import { GlobalStyle } from './GlobalStyle'
+import { Cabecalho } from './Components/Header/Header'
+import { ConteudoPrincipal } from './Components/Main/Main'
+import { Rodape } from './Components/Footer/Footer'
+import { Nav } from './Components/Nav/Nav'
 
 export default function App() {
   const titulo = 'Título do vídeo'
-  const imagemCapa = 'https://picsum.photos/400/400?a=1'
+  const capa = 'https://picsum.photos/400/400?a=1'
   const autor = 'Arlindo Orlando'
-
   return (
     <div>
-      <div className="tela-inteira">
-        <header>
-          <h1>LabeTube</h1>
-          <input type="text" placeholder="Busca" id="campoDeBusca" />
-        </header>
-
-        <main>
-          <nav className="menu-vertical">
-            <ul>
-              <li className="botoes-meunu-vertical">Início</li>
-              <li className="botoes-meunu-vertical">Em alta</li>
-              <li className="botoes-meunu-vertical">Inscrições</li>
-              <hr />
-              <li className="botoes-meunu-vertical">Originais</li>
-              <li className="botoes-meunu-vertical">Histórico</li>
-            </ul>
-          </nav>
-
-          <section className="painel-de-videos">
-            <CardVideo
-              titulo={titulo}
-              capa={imagemCapa}
-              icone={userIcon}
-              autor={autor}
-            />
-            <CardVideo
-              titulo={titulo}
-              capa={imagemCapa}
-              icone={userIcon}
-              autor={autor}
-            />
-            <CardVideo
-              titulo={titulo}
-              capa={imagemCapa}
-              icone={userIcon}
-              autor={autor}
-            />
-            <CardVideo
-              titulo={titulo}
-              capa={imagemCapa}
-              icone={userIcon}
-              autor={autor}
-            />
-            <CardVideo
-              titulo={titulo}
-              capa={imagemCapa}
-              icone={userIcon}
-              autor={autor}
-            />
-            <CardVideo
-              titulo={titulo}
-              capa={imagemCapa}
-              icone={userIcon}
-              autor={autor}
-            />
-            <CardVideo
-              titulo={titulo}
-              capa={imagemCapa}
-              icone={userIcon}
-              autor={autor}
-            />
-            <CardVideo
-              titulo={titulo}
-              capa={imagemCapa}
-              icone={userIcon}
-              autor={autor}
-            />
-          </section>
-        </main>
-
-        <footer>
-          <h4>Oi! Eu moro no footer!</h4>
-        </footer>
-      </div>
+      <GlobalStyle />
+      <Cabecalho />
+      <ConteudoPrincipal
+        titulo={titulo}
+        capa={capa}
+        icone={icone}
+        autor={autor}
+      />
+      <Rodape />
     </div>
   )
 }
